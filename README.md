@@ -22,7 +22,7 @@ El Departamento de Analítica Comercial busca optimizar las estrategias de marke
 1. **Clonar este repositorio:**
 ```bash
 git clone https://github.com/deknar/Prediccion-Inteligente-de-Gasto-en-Clientes-E-commerce.git
-cd "proyecto modulo #6"
+cd "Prediccion-Inteligente-de-Gasto-en-Clientes-E-commerce"
 ```
 
 2. **Instalar las dependencias necesarias** (si no las tienes globalmente):
@@ -54,3 +54,4 @@ Tras la evaluación de múltiples modelos mediante las métricas MAE, RMSE y R2,
 El hallazgo de negocio más relevante fue que la **antigüedad del cliente** (`Length of Membership`) explica el 66.51% del gasto, seguida del **tiempo de uso de la app móvil** (23.56%). El tiempo en la web fue prácticamente irrelevante (0.25%).
 
 > Nota: Para ver el desglose completo de métricas y la interpretación de negocio, consultar el archivo [`Informe_Tecnico.md`](./Informe_Tecnico.md) incluido en este repositorio.
+
