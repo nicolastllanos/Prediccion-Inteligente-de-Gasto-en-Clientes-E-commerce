@@ -13,6 +13,7 @@ Dado que la variable objetivo (*Yearly Amount Spent*) es numérica y continua, e
 
 - **Valores nulos:** imputados con la mediana mediante `SimpleImputer`, presentes en las columnas `Avg. Session Length` y `Time on App`.
 - **Outliers:** detectados y eliminados en `Time on Website` usando el método del Rango Intercuartílico (IQR). Se eliminaron 12 registros atípicos.
+- **Codificación de variables categóricas:** la columna `Avatar` (colores de perfil del usuario) fue procesada mediante dos técnicas: **Label Encoding** (que convierte cada categoría a un número entero) y **One-Hot Encoding** (que genera una columna binaria por categoría). La implementación completa se encuentra en el archivo `demo_codificacion_categorica.py`. Finalmente, esta variable no se incorporó al modelo por su alta cardinalidad (138 categorías únicas) y falta de impacto predictivo comprobado.
 - **Escalamiento:** todas las variables numéricas fueron estandarizadas con `StandardScaler` (Z-Score) para garantizar la convergencia correcta de los modelos.
 - **División:** 80% entrenamiento / 20% prueba con `random_state=42` para reproducibilidad.
 
@@ -61,3 +62,4 @@ La antigüedad del cliente y el tiempo de uso de la aplicación móvil son los f
 - Los clientes que usan la **aplicación móvil** gastan significativamente más que los que navegan por la web. La empresa debería invertir en mejorar la experiencia de su app.
 - El **tiempo en el sitio web** es prácticamente irrelevante para predecir el gasto (0.25% de importancia), lo que sugiere que la web funciona más como canal informativo que transaccional.
 - Con este modelo, el equipo de marketing puede anticipar el gasto esperado de cada cliente y diseñar campañas segmentadas con montos de oferta ajustados al perfil real del usuario.
+
