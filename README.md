@@ -21,7 +21,7 @@ El Departamento de Analítica Comercial busca optimizar las estrategias de marke
 
 1. **Clonar este repositorio:**
 ```bash
-git clone https://github.com/deknar/Prediccion-Inteligente-de-Gasto-en-Clientes-E-commerce.git
+git clone https://github.com/nicolastllanos/Prediccion-Inteligente-de-Gasto-en-Clientes-E-commerce.git
 cd "Prediccion-Inteligente-de-Gasto-en-Clientes-E-commerce"
 ```
 
